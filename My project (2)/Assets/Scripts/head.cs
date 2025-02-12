@@ -23,6 +23,9 @@ public class MouseLook : MonoBehaviour
         // Rotate the head up/down
         rotationX -= mouseY;
         rotationX = Mathf.Clamp(rotationX, -90f, 90f); // Prevent flipping
-        transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+        transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
+        // transform.localRotation = Quaternion.Euler(rotationX, playerBody.eulerAngles.y, 0f);
+    
+
     }
 }
