@@ -18,6 +18,12 @@ public class PlayerMovement : MonoBehaviour
         controller = GetComponent<CharacterController>();
     }
     
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject); // 让 Player 在切换场景时不被销毁
+    }
+
+
     void Update()
     {
         // 1. 检测是否在地面上
