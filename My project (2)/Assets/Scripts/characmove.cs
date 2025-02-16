@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = head.forward * moveZ + head.right * moveX;
         move.y = 0; // Prevent vertical movement
 
-        controller.Move(move * speed * Time.deltaTime);
+        // controller.Move(move * speed * Time.deltaTime);
+        controller.SimpleMove(move * speed);
+
     }
 }
