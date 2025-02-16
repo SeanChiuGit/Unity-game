@@ -809,19 +809,11 @@ Transform:
   m_GameObject: {fileID: 322043671}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream:My project (2)/Assets/Scenes/Beginner tutorial map.unity
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1601509023}
-=======
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1869088946}
->>>>>>> Stashed changes:My project (2)/Assets/Scenes/SampleScene.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &322043674
 MeshRenderer:
@@ -2090,98 +2082,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 976500906}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &740931284
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 740931285}
-  - component: {fileID: 740931287}
-  - component: {fileID: 740931286}
-  m_Layer: 0
-  m_Name: Terrain (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &740931285
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740931284}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 200, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1629911066}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!154 &740931286
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740931284}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 7568601ff2e6f494889a7289ff34af17, type: 2}
-  m_EnableTreeColliders: 1
---- !u!218 &740931287
-Terrain:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740931284}
-  m_Enabled: 1
-  serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 7568601ff2e6f494889a7289ff34af17, type: 2}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
-  m_HeightmapMaximumLOD: 0
-  m_ShadowCastingMode: 2
-  m_DrawHeightmap: 1
-  m_DrawInstanced: 0
-  m_DrawTreesAndFoliage: 1
-  m_StaticShadowCaster: 0
-  m_IgnoreQualitySettings: 0
-  m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
-  m_BakeLightProbesForTrees: 1
-  m_PreserveTreePrototypeLayers: 0
-  m_DeringLightProbesForTrees: 1
-  m_ReceiveGI: 1
-  m_ScaleInLightmap: 0.0256
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
-  m_GroupingID: 0
-  m_RenderingLayerMask: 1
-  m_AllowAutoConnect: 1
-  m_EnableHeightmapRayTracing: 1
-  m_EnableTreesAndDetailsRayTracing: 0
-  m_TreeMotionVectorModeOverride: 3
 --- !u!1001 &741819312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2644,12 +2544,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-<<<<<<< Updated upstream:My project (2)/Assets/Scenes/Beginner tutorial map.unity
   m_Children:
   - {fileID: 1601509023}
-=======
-  m_Children: []
->>>>>>> Stashed changes:My project (2)/Assets/Scenes/SampleScene.unity
   m_Father: {fileID: 1869088946}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &926946342
@@ -2787,11 +2683,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-<<<<<<< Updated upstream:My project (2)/Assets/Scenes/Beginner tutorial map.unity
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-=======
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
->>>>>>> Stashed changes:My project (2)/Assets/Scenes/SampleScene.unity
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2948,10 +2840,6 @@ Transform:
   - {fileID: 14364316}
   - {fileID: 1420242927}
   - {fileID: 1618356013}
-<<<<<<< Updated upstream:My project (2)/Assets/Scenes/Beginner tutorial map.unity
-=======
-  - {fileID: 1869088946}
->>>>>>> Stashed changes:My project (2)/Assets/Scenes/SampleScene.unity
   - {fileID: 468894259}
   - {fileID: 1356243402}
   - {fileID: 988582105}
@@ -4615,25 +4503,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601509022}
   serializedVersion: 2
-<<<<<<< Updated upstream:My project (2)/Assets/Scenes/Beginner tutorial map.unity
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-=======
-  m_LocalRotation: {x: 0, y: 0.5, z: 0, w: 0.8660254}
->>>>>>> Stashed changes:My project (2)/Assets/Scenes/SampleScene.unity
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-<<<<<<< Updated upstream:My project (2)/Assets/Scenes/Beginner tutorial map.unity
   - {fileID: 322043672}
   - {fileID: 963194228}
   m_Father: {fileID: 926946340}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
-  - {fileID: 963194228}
-  m_Father: {fileID: 1869088946}
-  m_LocalEulerAnglesHint: {x: 0, y: 60, z: 0}
->>>>>>> Stashed changes:My project (2)/Assets/Scenes/SampleScene.unity
 --- !u!114 &1601509024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4647,11 +4525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 500
-<<<<<<< Updated upstream:My project (2)/Assets/Scenes/Beginner tutorial map.unity
   playerBody: {fileID: 926946340}
-=======
-  playerBody: {fileID: 963194228}
->>>>>>> Stashed changes:My project (2)/Assets/Scenes/SampleScene.unity
 --- !u!1001 &1615856221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5499,26 +5373,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869088945}
   serializedVersion: 2
-<<<<<<< Updated upstream:My project (2)/Assets/Scenes/Beginner tutorial map.unity
   m_LocalRotation: {x: -0, y: 0.9238796, z: -0, w: -0.38268325}
   m_LocalPosition: {x: 85.47, y: 4.9, z: 87.31}
-=======
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -14.529999, y: 4.9, z: -12.690002}
->>>>>>> Stashed changes:My project (2)/Assets/Scenes/SampleScene.unity
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 926946340}
-<<<<<<< Updated upstream:My project (2)/Assets/Scenes/Beginner tutorial map.unity
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 225, z: 0}
-=======
-  - {fileID: 1601509023}
-  - {fileID: 322043672}
-  m_Father: {fileID: 976500906}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
->>>>>>> Stashed changes:My project (2)/Assets/Scenes/SampleScene.unity
 --- !u!114 &1869088947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5550,7 +5412,6 @@ CharacterController:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-<<<<<<< Updated upstream:My project (2)/Assets/Scenes/Beginner tutorial map.unity
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
@@ -5562,20 +5423,12 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream:My project (2)/Assets/Scenes/Beginner tutorial map.unity
 --- !u!136 &1869088951
 CapsuleCollider:
-=======
---- !u!1 &1970563363
-GameObject:
->>>>>>> Stashed changes:My project (2)/Assets/Scenes/SampleScene.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:My project (2)/Assets/Scenes/Beginner tutorial map.unity
-  m_GameObject: {fileID: 1869088945}
-=======
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1970563364}
@@ -5610,7 +5463,6 @@ TerrainCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1970563363}
->>>>>>> Stashed changes:My project (2)/Assets/Scenes/SampleScene.unity
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5629,27 +5481,10 @@ TerrainCollider:
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1869088952
 MonoBehaviour:
-=======
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 9fcba5361822be64cbe09e58fcc0617e, type: 2}
-  m_EnableTreeColliders: 1
---- !u!218 &1970563366
-Terrain:
->>>>>>> Stashed changes:My project (2)/Assets/Scenes/SampleScene.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:My project (2)/Assets/Scenes/Beginner tutorial map.unity
-  m_GameObject: {fileID: 1869088945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25cc903902f3e3740a9cd749624d6269, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-=======
   m_GameObject: {fileID: 1970563363}
   m_Enabled: 1
   serializedVersion: 6
@@ -5741,7 +5576,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ad8db4bd8b425b4d885d3a26de5e86f, type: 3}
->>>>>>> Stashed changes:My project (2)/Assets/Scenes/SampleScene.unity
 --- !u!1001 &1994905045
 PrefabInstance:
   m_ObjectHideFlags: 0
