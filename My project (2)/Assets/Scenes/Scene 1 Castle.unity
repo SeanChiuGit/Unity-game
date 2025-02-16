@@ -1117,7 +1117,7 @@ Transform:
   m_GameObject: {fileID: 218788364}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 130, y: 1, z: 220.31}
+  m_LocalPosition: {x: 130, y: 100, z: 220.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10134,7 +10134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1773471828}
   m_Layer: 0
-  m_Name: scene2
+  m_Name: scene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10888,6 +10888,7 @@ GameObject:
   - component: {fileID: 1933213701}
   - component: {fileID: 1933213700}
   - component: {fileID: 1933213699}
+  - component: {fileID: 1933213703}
   m_Layer: 0
   m_Name: Teleport point
   m_TagString: Untagged
@@ -10910,7 +10911,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10981,6 +10982,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1933213703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933213698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c625fcc14355ba9428e11cfa7a041e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: Beginner tutorial map
 --- !u!1 &1944440187
 GameObject:
   m_ObjectHideFlags: 0
