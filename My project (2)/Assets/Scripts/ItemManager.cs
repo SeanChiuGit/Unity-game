@@ -48,6 +48,7 @@ public class ItemManager : MonoBehaviour
         if (teleport_point != null)
         {
             Debug.Log("所有物品已收集，传送门出现！");
+            Debug.Log("提示：食材以集齐");
             teleport_point.SetActive(true);
         }
     }
