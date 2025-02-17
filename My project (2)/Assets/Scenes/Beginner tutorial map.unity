@@ -1578,6 +1578,7 @@ MonoBehaviour:
   - {fileID: 1278062780}
   - {fileID: 972932098}
   - {fileID: 1781413260}
+  teleport_point: {fileID: 988582104}
 --- !u!4 &603430971
 Transform:
   m_ObjectHideFlags: 0

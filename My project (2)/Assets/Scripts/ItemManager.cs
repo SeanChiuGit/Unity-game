@@ -6,6 +6,7 @@ public class ItemManager : MonoBehaviour
 {
     // 物品对象
     public GameObject[] items;
+    public GameObject teleport_point; // 传送门对象
 
     // 记录哪些物品被捡起
     private bool[] itemPickedUp;
@@ -14,6 +15,10 @@ public class ItemManager : MonoBehaviour
     {
         // 初始化物品状态数组
         itemPickedUp = new bool[items.Length];
+        if (teleport_point != null)
+        {
+            teleport_point.SetActive(false);
+        }
     }
 
     public void ItemPickedUp(int itemIndex)
@@ -40,7 +45,10 @@ public class ItemManager : MonoBehaviour
 
     void PerformSpecialAction()
     {
-        Debug.Log("所有物品已捡起，执行特定操作！");
-        // 在这里添加你希望在所有物品被捡起时执行的操作
+        if (teleport_point != null)
+        {
+            Debug.Log("所有物品已收集，传送门出现！");
+            teleport_point.SetActive(true);
+        }
     }
 }
