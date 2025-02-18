@@ -9,6 +9,15 @@ public class TeleportOnTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        SceneStateSaver saver = FindObjectOfType<SceneStateSaver>();
+        if (saver != null) 
+        {
+            saver.SaveState();
+        }
+        else 
+        {
+            Debug.LogWarning("SceneStateSaver not found! Skipping SaveState.");
+        }
         SceneManager.LoadScene(targetSceneName); // 切换场景
     }
 }

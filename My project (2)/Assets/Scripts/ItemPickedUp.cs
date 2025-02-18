@@ -36,7 +36,8 @@ public class ItemPickedUp : MonoBehaviour
             {
                 itemManager.ItemPickedUp(itemIndex);
                 Debug.Log("Picked Item");
-                Destroy(gameObject);
+                // Destroy(gameObject);
+                gameObject.SetActive(false); // 让当前对象变为 Inactive
                 break;
             }
         }
