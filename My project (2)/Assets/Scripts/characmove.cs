@@ -20,6 +20,12 @@ public class PlayerMovement : MonoBehaviour
     
     void Awake()
     {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        if (players.Length > 1)
+        {
+            Destroy(gameObject);
+            return;
+        }
         DontDestroyOnLoad(gameObject); // 让 Player 在切换场景时不被销毁
     }
 
