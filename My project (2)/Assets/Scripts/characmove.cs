@@ -10,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Vector3 velocity;         // 用于处理角色的 y 轴运动（重力 & 跳跃）
     private bool isGrounded;          // 是否接触地面
-
+    private int jumpCount = 0;  // 记录跳跃次数
+    private bool canDoubleJump = false;  // 是否解锁二段跳
 
 
      void Start()
@@ -36,6 +37,10 @@ public class PlayerMovement : MonoBehaviour
         // isGrounded = Physics.Raycast(transform.position, Vector3.down, controller.height / 2 + 0.1f);
         isGrounded = controller.isGrounded;
 
+        if (isGrounded)
+        {
+            jumpCount = 0;  // 重置跳跃次数
+        }
 
         // 2. 处理水平移动（WASD / 方向键）
         float moveX = Input.GetAxis("Horizontal");  // 左右移动 (A/D)
@@ -44,10 +49,10 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(move * speed * Time.deltaTime);
         
         // 3. 处理跳跃
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && (jumpCount < 1 || (canDoubleJump && jumpCount < 2)))
         {
             velocity.y = Mathf.Sqrt(jumpHeight * 2f * gravity);
-            // Debug.Log(velocity.y);
+            jumpCount++;  // 记录跳跃次数
         }
 
         // 4. 施加重力（让角色下落）
@@ -56,6 +61,13 @@ public class PlayerMovement : MonoBehaviour
         // 5. 应用重力
         controller.Move(velocity * Time.deltaTime);  
 
-
+        
     }
+
+        // 6. 让外部调用此方法解锁二段跳（例如捡到道具）
+        public void UnlockDoubleJump()
+        {
+            canDoubleJump = true;
+        }
+
 }

@@ -36,7 +36,17 @@ public class ItemPickedUp : MonoBehaviour
             {
                 itemManager.ItemPickedUp(itemIndex);
                 Debug.Log("Picked Item");
-                // Destroy(gameObject);
+
+                if (itemIndex == 0) // 例如 itemIndex 0 代表二段跳道具
+                {
+                    PlayerMovement player = hitCollider.GetComponent<PlayerMovement>();
+                    if (player != null)
+                    {
+                        player.UnlockDoubleJump(); // 解锁二段跳
+                        Debug.Log("Double Jump Unlocked!");
+                    }
+                }
+
                 gameObject.SetActive(false); // 让当前对象变为 Inactive
                 break;
             }
