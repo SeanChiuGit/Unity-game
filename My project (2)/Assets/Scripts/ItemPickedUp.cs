@@ -37,13 +37,23 @@ public class ItemPickedUp : MonoBehaviour
                 itemManager.ItemPickedUp(itemIndex);
                 Debug.Log("Picked Item");
 
-                if (itemIndex == 0) // 例如 itemIndex 0 代表二段跳道具
+                if (itemIndex == 3) // 例如 itemIndex 3 代表二段跳道具 4代表冲刺道具
                 {
                     PlayerMovement player = hitCollider.GetComponent<PlayerMovement>();
                     if (player != null)
                     {
                         player.UnlockDoubleJump(); // 解锁二段跳
                         Debug.Log("Double Jump Unlocked!");
+                    }
+                }
+
+                if (itemIndex == 4) 
+                {
+                    PlayerMovement player = hitCollider.GetComponent<PlayerMovement>();
+                    if (player != null)
+                    {
+                        player.UnlockDash(); // 解锁二段跳
+                        Debug.Log("Dash Unlocked!");
                     }
                 }
 

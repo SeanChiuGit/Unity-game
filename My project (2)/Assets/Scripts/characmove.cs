@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     private int jumpCount = 0;
     private bool canDoubleJump = false;
+    private bool canDash = false;
     private bool isDashing = false;
     private float dashEndTime = 0f;
     private float lastDashTime = -10f;
@@ -49,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = head.forward * moveZ + head.right * moveX;
         
         // 处理冲刺逻辑
-        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time > lastDashTime + dashCooldown && !isDashing)
+        if (canDash && Input.GetKeyDown(KeyCode.LeftShift) && Time.time > lastDashTime + dashCooldown && !isDashing)
         {
             isDashing = true;
             dashEndTime = Time.time + dashDuration;
@@ -83,5 +84,10 @@ public class PlayerMovement : MonoBehaviour
     public void UnlockDoubleJump()
     {
         canDoubleJump = true;
+    }
+
+    public void UnlockDash()
+    {
+        canDash = true;
     }
 }
