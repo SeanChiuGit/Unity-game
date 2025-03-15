@@ -78,6 +78,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
         velocity.y -= gravity * Time.deltaTime;
+        // 限制下降速度，防止下落速度无限增加
+        float maxFallSpeed = -50f; // 设定最大下落速度
+        if (velocity.y < maxFallSpeed)
+        {
+            velocity.y = maxFallSpeed;
+        }
         controller.Move(velocity * Time.deltaTime);
     }
 
@@ -90,4 +96,10 @@ public class PlayerMovement : MonoBehaviour
     {
         canDash = true;
     }
+
+    public void ResetFallingSpeed()
+    {
+        velocity.y = 0f; // 复活时重置下落速度
+    }
+
 }
