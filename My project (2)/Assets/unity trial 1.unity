@@ -3191,8 +3191,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 127c5c76afce9a446b838d5b9cb7c555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1869088948}
   speed: 8
+  dashSpeed: 40
+  dashDuration: 0.3
+  dashCooldown: 1
+  jumpHeight: 5
+  gravity: 30
   head: {fileID: 1601509023}
 --- !u!143 &1869088948
 CharacterController:
